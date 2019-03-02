@@ -1,0 +1,129 @@
+/**/
+/*CSS reset to remove all default margins, padding and borders*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #073784;
+}
+
+.clock {
+  height: 500px;
+  width: 500px;
+  /*border-radius of 50% makes a circle, 100% is not necessary*/
+  border-radius: 50%;
+  background-color: #dddddd;
+  border: 3px solid #aaaaaa;
+  /*the following makes the clock centered*/
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/*clock hands*/
+.twelve {
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background-color: #000;
+  left: 0;
+  top: 0;
+  right: 0;
+  /*margin: vertical | horizontal*/
+  margin: 0 auto;
+}
+
+.three {
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #000;
+  top: 0;
+  bottom:0;
+  right:0;
+  margin: auto 0;
+}
+
+.six {
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background-color: #000;
+  left: 0;
+  bottom:0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.nine {
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #000;
+  top: 0;
+  bottom:0;
+  left:0;
+  margin: auto 0;
+}
+
+.center{
+  height: 10px;
+  width: 10px;
+  /*border-radius of 100% makes a circle*/
+  border-radius: 100%;
+  background-color: #000;
+  /*the following makes the clock centered*/
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#seconds {
+  position: absolute;
+  height: 160px;
+  width:2px;
+  background-color: #ff4136;
+  left:0;
+  right: 0;
+  bottom:160px;
+  top:0;
+  margin:auto;
+  transform-origin: bottom;
+}
+
+#minutes {
+  position: absolute;
+  height:200px;
+  width: 2px;
+  background-color: #000;
+  left:0;
+  right:0;
+  top:0;
+  /*why does the bottom attribute have to be the same as
+  the height attribute for min, sec, hour?*/
+  bottom:200px;
+  margin:auto;
+  transform-origin: bottom;
+}
+
+#hours {
+  position: absolute;
+  height: 80px;
+  width: 6px;
+  background-color: #000;
+  left:0;
+  right:0;
+  top:0;
+  bottom:80px;
+  margin: auto;
+  transform-origin: bottom;
+}
